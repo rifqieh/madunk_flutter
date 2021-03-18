@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'theme.dart';
 
 void main() {
@@ -20,14 +19,14 @@ class MyApp extends StatelessWidget {
               child: Column(
                 children: [
                   SizedBox(height: 100),
-                  Image.network(
-                    'https://images.unsplash.com/photo-1588612568467-a6b245a1f4a5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=400&q=80',
+                  Image.asset(
+                    'assets/illustration.png',
                     height: 250,
-                    width: 250,
+                    width: 283,
                   ),
                   SizedBox(height: 100),
                   Text(
-                    'In Coming',
+                    'Im Coming',
                     style: titleTextStyle,
                   ),
                   SizedBox(height: 10),
@@ -69,3 +68,32 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+Color blackColor = Color(0XFF1E1E1E);
+Color greyColor = Color(0XFF8788A6);
+Color whiteColor = Color(0XFFFFFFFF);
+Color orangeColor = Color(0XFFFF7750);
+
+TextStyle titleTextStyle = TextStyle(
+  fontSize: 22,
+  color: blackColor,
+);
+
+TextStyle subTextStyle = TextStyle(
+  fontSize: 16,
+  color: greyColor,
+  fontWeight: FontWeight.w300,
+);
+
+TextStyle buttonTextStyle = TextStyle(
+  fontSize: 18,
+  color: whiteColor,
+  fontWeight: FontWeight.w500,
+);
+
+TextStyle underlineTextStyle = TextStyle(
+  fontSize: 16,
+  color: orangeColor,
+  fontWeight: FontWeight.w300,
+  decoration: TextDecoration.underline,
+);
